@@ -5,7 +5,9 @@ import info.isaaclee.todo.work.application.port.`in`.GetWorkQuery
 import info.isaaclee.todo.work.application.port.`in`.GetWorkUseCase
 import info.isaaclee.todo.work.application.port.out.FindWorkPort
 import info.isaaclee.todo.work.domain.Work
+import org.springframework.stereotype.Service
 
+@Service
 class GetWorkService(
 	private val findWorkPort: FindWorkPort
 ): GetWorkUseCase {
